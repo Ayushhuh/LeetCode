@@ -9,20 +9,16 @@ class Solution {
             {
                 l++;
                 nums[l] = nums[r];
-                r++;
                 count++;
-            }
-            else if(count==1&&nums[l]==nums[r])
-            {
-                r++;
             }
             else if(nums[l]!=nums[r])
             {
                 l++;
                 nums[l] = nums[r];
                 count = 0;
-                r++;
             }
+
+            r++;
         }
         return l+1;
     }
