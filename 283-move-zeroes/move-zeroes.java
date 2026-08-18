@@ -17,11 +17,6 @@ class Solution {
             {
                 while(r<nums.length&&nums[r]==0) r++;
             }
-            else if(nums[l]!=0&&nums[r]!=0)
-            {
-                l++;
-                r++;
-            }
             else
             {
                 l++;
